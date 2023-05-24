@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="FAQ.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <div class="contanier">
+        <header class="header header-one">
+            <div class="head-container">
+                <div class="head-top">
+                    <div class="cols">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/01.png">
+                                    <span>yourmail@gmail.com</apan>
+                                </li>
+                                <li>
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/02.png">
+                                    <span>Monday-Friday : 09:30 pm - 06:24 pm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="head-side">
+                        <div class="colsinfo">
+                            <ul>
+                                <li>
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/03.png">
+                                    <span>27 Division St, New York, NY 10002, USA</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="header-bottom">
+
+            <div class="header-container">
+                <div class="area">
+                    <div class="head-img">
+                        <img
+                            src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/logo/02.png">
+                    </div>
+                    <div class="main-menu">
+                        <div class="navbar">
+                            <div class="mobile-menu-icon">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <ul class="nav">
+                                <li><a href="#">Home +</a></li>
+                                <li><a href="#">Pages +</a>
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Services +</a></li>
+                                <li><a href="#">Portfolio +</a></li>
+                                <li><a href="#">Blog +</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+
+                            <div class="header-btn">
+                                <div class="search">
+
+                                    <img class="search-btn"
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/04.png"
+                                        alt="search">
+
+                                    <img class="cart-btn"
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/05.png"
+                                        alt="cart">
+
+                                </div>
+                                <div class="btn">
+                                    <a href="#" class="button"></a>free Consultancy</a><i
+                                        class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+                const navbar = document.querySelector('.navbar');
+                const navItemsWithSubmenu = document.querySelectorAll('.nav > li');
+
+                mobileMenuIcon.addEventListener('click', function () {
+                    navbar.classList.toggle('active');
+                });
+
+                navItemsWithSubmenu.forEach(function (navItem) {
+                    const submenu = navItem.querySelector('ul');
+
+                    if (submenu) {
+                        navItem.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+
+                            submenu.classList.toggle('active');
+                        });
+                    }
+                });
+            });
+
+
+        </script>
+
+
+
+        <div class="pic">
+            <div class=" picture">
+                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/page-header.jpg">
+
+                <div class="aboutcontainer">
+                    <div class="content">
+                        <h2>frequently asked questions</h2>
+                    </div>
+                    <div class="subcon">
+                        <ul>
+                            <li class="home"><a href="" class="home"> Home</a></li>
+                            <li class="slash"><a href="" class="slash"> /</a></li>
+                            <li class="faq"><a href="" class="faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-wrapper">
+            <div class="faq-container">
+                <div class="faqtxt">
+                    <h5>POPULAR QUESTIONS</h5>
+                    <h2>Need Help? Read Popular Questions</h2>
+                </div>
+
+                <div class="questions-wrapper">
+                    <div class="questions-container">
+
+                        <div class="questions">
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span> <span
+                                        class="accordion-header">What does FAQ mean in business?</span>
+                                </button>
+
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span> <span
+                                        class="accordion-header">What questions do customer ask?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span> <span
+                                        class="accordion-header">What are the 4 basic business
+                                        questions?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span> <span
+                                        class="accordion-header">how is your business going answer?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span> <span
+                                        class="accordion-header">What questions do customer ask?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span> <span
+                                        class="accordion-header">What are the 4 basic business
+                                        questions?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="faq-questions">
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span>
+                                    <span class="accordion-header">how much does a website cost?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet
+                                        nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span>
+                                    <span class="accordion-header">how long does it take to build a
+                                        website?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet
+                                        nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span>
+                                    <span class="accordion-header">What are the 4 basic business
+                                        questions?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet
+                                        nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span>
+                                    <span class="accordion-header"> are there any other cost for my
+                                        website?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet
+                                        nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span>
+                                    <span class="accordion-header">can you help me with my social
+                                        media?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet
+                                        nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion" type="button">
+                                    <span class="accordion-icon"><i class="fa-solid fa-question"></i></span>
+                                    <span class="accordion-header">do you offer going help with new
+                                        website?</span>
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Praesent id massa suscipit venenatis velit in, ultrices sapi Phasellus
+                                        molestie exvels dictum efficitur felis erat pharet metus ut aliquet
+                                        nulla
+                                        nulla ac nibh.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+                        var activeAccordion = null;
+
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function () {
+                                if (activeAccordion && activeAccordion !== this) {
+                                    activeAccordion.classList.remove("active");
+                                    activeAccordion.nextElementSibling.style.display = "none";
+                                }
+
+                                this.classList.toggle("active");
+                                var accordionBody = this.nextElementSibling;
+                                if (accordionBody.style.display === "block") {
+                                    accordionBody.style.display = "none";
+                                } else {
+                                    accordionBody.style.display = "block";
+                                }
+
+                                activeAccordion = this.classList.contains("active") ? this : null;
+                            });
+                        }
+
+
+
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="consultant-wrapper"
+            style="background-image: url(https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/consultancy/bg/bg.jpg);">
+            <div class="consult-img"
+                style="background-image:url(https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/consultancy/bg/01.jpg);">
+            </div>
+            <div class="consultancy">
+                <div class="consultancy__contact">
+                    <h2>Get a Free Consultancy</h2>
+                    <form action="#">
+                        <div class="consult-row">
+                            <div class="consult">
+                                <input type="text" placeholder="your name*" name="name" id="name">
+                            </div>
+                            <div class="consult">
+                                <input type="text" placeholder="Company*" name="company" id="company">
+                            </div>
+                            <div class="consult">
+                                <input type="text" placeholder="Email Address*" name="email" id="email">
+                            </div>
+                            <div class="consult">
+                                <input type="text" placeholder="Subjects*" name="subject" id="subject">
+                            </div>
+                            <div class="form-message">
+                                <textarea name="massage" id="massage" rows="5" placeholder="Massage"></textarea>
+                            </div>
+                            <div class="submitbtn">
+                                <button class="submit" type="submit">free consultancy <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="containers">
+                <div class="row">
+                    <div class="text">
+                        <h5>our CONTACTS</h5>
+                        <h2>We’re Here To Help You</h2>
+                        <p>Got a project in mind? We’d love to hear about it. Take five minutes to fill out our project.
+                        </p>
+                    </div>
+
+                    <div class="cardcont">
+                        <div class="card">
+                            <div class="cardimg">
+                                <img
+                                    src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/contact/icon/01.png">
+                            </div>
+                            <div class="card-cont">
+                                <h5>Visit Us Daily:</h5>
+                                <p>218 New Elephent Road, Gulshan-1060 10 Gren Road, Dhaka-1100.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="cardimg">
+                                <img
+                                    src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/contact/icon/02.png">
+                            </div>
+                            <div class="card-cont">
+                                <h5>Visit Us Daily:</h5>
+                                <p>Monday - Thusday : 9:30am - 6:30pm Friday : <span>Closed</span></p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="cardimg">
+                                <img
+                                    src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/contact/icon/03.png">
+                            </div>
+                            <div class="card-cont">
+                                <h5>phone number</h5>
+                                <p>+880 1234 567 890</p>
+                                <p>292 09 - 845 632</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="foot-img">
+                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/footer.jpg" alt="img">
+            </div>
+            <div class="foot-contain">
+                <div class="info-container">
+                    <div class="info-items">
+
+                        <div class="info-top">
+                            <div class="info-icon">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/footer/info/icon/01.png"
+                                    alt="img">
+                            </div>
+                            <div class="info-cont">
+                                <p>Phone Number</p>
+                                <h6>+880 123 456 789</h6>
+                            </div>
+                        </div>
+
+                        <div class="info-top">
+                            <div class="info-icon">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/footer/info/icon/02.png"
+                                    alt="img">
+                            </div>
+                            <div class="info-cont">
+                                <p>Email Address</p>
+                                <h6>infoyour@gmail.com</h6>
+                            </div>
+                        </div>
+
+
+                        <div class="info-top">
+                            <div class="info-icon">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/footer/info/icon/03.png"
+                                    alt="img">
+                            </div>
+                            <div class="info-cont">
+                                <p>Office Location</p>
+                                <h6>Meltons, Lucas City 1200</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="footer-middle">
+                    <div class="footer-container">
+                        <div class="footer-content">
+
+                            <div class="foot foot1">
+                                <div class="foot-title">
+                                    <h5>about company</h5>
+                                </div>
+                                <p>Enthusias drive accuratie users vas tha effective interfaces nergstically pursue
+                                    adaptve
+                                    cores create rough effectve create nterface </p>
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="foot foot2">
+                                <div class="foot-title">
+                                    <h5>about company</h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><i class="fa-thin fa-sparkle"></i> Help Center</a></li>
+                                    <li><a href="#"><i class="fa-thin fa-sparkle"></i> Partners</a></li>
+                                    <li><a href="#"><i class="fa-thin fa-sparkle"></i> Suggestions</a></li>
+                                    <li><a href="#"><i class="fa-thin fa-sparkle"></i> Blog</a></li>
+                                    <li><a href="#"><i class="fa-thin fa-sparkle"></i> Newsletters</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="foot foot3">
+                                <div class="foot-title">
+                                    <h5>Recent Post</h5>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="footerimg">
+                                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/01.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="footerpost">
+                                            <h6>Employe development is company’s</h6>
+                                            <span><i class="fa-solid fa-calendar-days"></i> 15 Jan, 2023</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footerimg">
+                                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/02.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="footerpost">
+                                            <h6>Should fixing take 10+ corporate steps.</h6>
+                                            <span><i class="fa-solid fa-calendar-days"></i> 15 Jan, 2023</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="foot foot4">
+                                <div class="foot-title">
+                                    <h5>Usefull Links</h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><i class=""></i> Contact us</a></li>
+                                    <li><a href="#"><i class="icofont-star-alt-1"></i> How it Works</a></li>
+                                    <li><a href="#"><i class="icofont-star-alt-1"></i> Create</a></li>
+                                    <li><a href="#"><i class="icofont-star-alt-1"></i> Explore</a></li>
+                                    <li><a href="#"><i class="icofont-star-alt-1"></i> Terms & Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="footer-btm">
+                    <div class="btm">
+                        <p>&copy; Copyright & Design By <a href="#">PixiansStudioUIUX</a> - 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-turn-up"></i></a>
+
+        <script>
+            const scrollToTopButton = document.querySelector(".scrollToTop");
+
+            window.addEventListener("scroll", function () {
+                if (window.pageYOffset > 100) {
+                    scrollToTopButton.style.display = "block";
+                } else {
+                    scrollToTopButton.style.display = "none";
+                }
+            });
+
+            scrollToTopButton.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        </script>
+
+
+    </div>
+</body>
+
+</html>

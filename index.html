@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Bizpoint</title>
+</head>
+
+<body>
+    <div class="page-contanier">
+        <header class="header header-one">
+            <div class="head-container">
+                <div class="head-top">
+                    <div class="cols">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/01.png">
+                                    <span>yourmail@gmail.com</apan>
+                                </li>
+                                <li>
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/02.png">
+                                    <span>Monday-Friday : 09:30 pm - 06:24 pm</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="head-side">
+                        <div class="colsinfo">
+                            <ul>
+                                <li>
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/03.png">
+                                    <span>27 Division St, New York, NY 10002, USA</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    <div class="header-bottom">
+
+        <div class="header-container">
+            <div class="area">
+                <div class="head-img">
+                    <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/logo/01.png">
+                </div>
+                <div class="main-menu">
+                    <div class="navbar">
+                        <div class="mobile-menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul class="nav">
+                            <li><a href="#">Home +</a></li>
+                            <li><a href="#">Pages +</a>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Services +</a></li>
+                            <li><a href="#">Portfolio +</a></li>
+                            <li><a href="#">Blog +</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+
+                        <div class="header-btn">
+                            <div class="search">
+
+                                <img class="search-btn"
+                                    src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/04.png"
+                                    alt="search">
+
+                                <img class="cart-btn"
+                                    src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/header/icon/05.png"
+                                    alt="cart">
+
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="button"></a>free Consultancy</a><i
+                                    class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+            const navbar = document.querySelector('.navbar');
+            const navItemsWithSubmenu = document.querySelectorAll('.nav > li');
+
+            mobileMenuIcon.addEventListener('click', function () {
+                navbar.classList.toggle('active');
+            });
+
+            navItemsWithSubmenu.forEach(function (navItem) {
+                const submenu = navItem.querySelector('ul');
+
+                if (submenu) {
+                    navItem.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        submenu.classList.toggle('active');
+                    });
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+    <div class="banner-wrapper">
+
+        <div class="banner">
+            <div class="banr-img">
+                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/banner/bg/01.jpg">
+            </div>
+            <div class="banner-container">
+                <div class="content">
+                    <div class="content-class">
+                        <h5>#1 Ranked Finance Firm Company</h5>
+                        <h2>We Promote & Grow Your Business</h2>
+                    </div>
+                    <div class="sub-contents">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-house-user"> </i>Family Wealth Managment</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Tax Saving Mutual Funds</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-briefcase"></i>Insurance Investment</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-user-secret"></i> Tax Saving Investment</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-sack-dollar"></i>Financial Planning</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-signal"></i>Online Investment Plans</a>
+                            </li>
+                        </ul>
+                        <div class="conbtn">
+                            <a href="#" class="bttn">explore more<i class="fa-solid fa-arrow-right"></a></i>
+                            <a href="#" class="butn">get in touch<i class="fa-solid fa-arrow-right"></a></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bannerimg">
+                    <div class="bnr-image">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/banner/01.png"
+                            alt="a boy">
+                        <div class="circleimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/banner/icon/01.png"
+                                alt="circle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid-container">
+            <div class="gridlayout">
+                <div class="grid grid1">
+                    <div class="grid-cont">
+                        <div class="peopleimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/feature/01.png"
+                                alt="people treated">
+                        </div>
+                        <div class="text">
+                            <h3>8.4 M+ People Treated</h3>
+                            <p>Our Fixcon is insanely flexible and amazingly easy to use.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid grid2">
+                    <div class="grid-cont">
+                        <div class="peopleimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/feature/02.png"
+                                alt="people treated">
+                        </div>
+                        <div class="text">
+                            <h3>40+ Expert Advisor's</h3>
+                            <p>Get started swiftly & easily by importing a demo of your choice.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid grid3">
+                    <div class="grid-cont">
+                        <div class="peopleimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/feature/03.png"
+                                alt="people treated">
+                        </div>
+                        <div class="text">
+                            <h3>95% Success Rate</h3>
+                            <p>Over 30 quality professionally designed pre-built website.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-container">
+        <div class="about">
+            <div class="abtcompny">
+                <div class="data">
+                    <h5>About Company</h5>
+                    <h2>Bizpoint Finance Firm Expert In Finance Consulting</h2>
+                    <p>We are proud to offer top rangen comprehensve employmen services such and aser payroll and
+                        benefts adminitration management and asstance with global business range employment employer
+                        compliance.</p>
+                    <ul>
+                        <li>
+                            <h5>
+                                <a href="#"><i class="fa-solid fa-check">
+                                    </i> DevOps Development</a>
+                            </h5>
+                            <p>We provide DevOps consulting services to help our customers adapt to an environment.</p>
+                        </li>
+                        <li>
+                            <h5>
+                                <a href="#"><i class="fa-solid fa-check">
+                                    </i> Automated Software</a>
+                            </h5>
+                            <p>We provide DevOps consulting services to help our customers adapt to an environment.</p>
+                        </li>
+                    </ul>
+                    <div class="about-btn">
+                        <a href="#" class="bttn">explore more<i class="fa-solid fa-arrow-right"></a></i>
+                        <a href="#" class="butn">get in touch<i class="fa-solid fa-arrow-right"></a></i>
+                    </div>
+                </div>
+
+
+                <div class="picture-container">
+                    <div class="picture">
+                        <div class="picture-pic">
+                            <div class="photos">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/about/01.jpg"
+                                    alt="officeimg">
+                            </div>
+                            <div class="photos2">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/about/02.jpg"
+                                    alt="">
+                            </div>
+                            <div class="photos3">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/about/03.jpg"
+                                    alt="">
+                                <div class="photos3-img">
+                                    <img
+                                        src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/about/icon/01.png">
+                                    <h5><span>24+ Years</span> of Experiences</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bgimg">
+        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/15.jpg" alt="img">
+    </div>
+    <div class="backgrnd-container">
+        <div class="background">
+            <div class="text">
+                <h5>our best services</h5>
+                <h2>we pride ourselves on offering great service</h2>
+            </div>
+
+            <div class="services-wrapper">
+                <div class="services-container">
+                    <div class="serv">
+                        <div class="servitem">
+                            <div class="items">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/icon/01.png"
+                                    alt="service">
+                            </div>
+                            <div class="servicetext">
+                                <h5>competitor analysis</h5>
+                                <p>fixcon help you to Introduce your digital campaign to visitor in more
+                                    professional
+                                    way and increase.</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/01.jpg"
+                                alt="idk">
+                            <div class="botnn">
+                                <a href="#" class="ser-botn">view details</a><i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <div class="servitem">
+                            <div class="items">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/icon/02.png"
+                                    alt="service">
+                            </div>
+                            <div class="servicetext">
+                                <h5>tax saving mutual funds</h5>
+                                <p>fixcon help you to introduce your digital campaign to visitor in more
+                                    professional
+                                    way
+                                    and increase.</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/02.jpg"
+                                alt="idk">
+                            <div class="botnn">
+                                <a href="#" class="ser-botn"></a>view details</a><i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="serv">
+                        <div class="servitem">
+                            <div class="items">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/icon/03.png"
+                                    alt="service">
+                            </div>
+                            <div class="servicetext">
+                                <h5>insurance investment</h5>
+                                <p>fixcon help you to Introduce your digital campaign to visitor in more
+                                    professional
+                                    way and increase.</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/03.jpg"
+                                alt="idk">
+                            <div class="botnn">
+                                <a href="#" class="ser-botn"></a>view details</a><i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <div class="servitem">
+                            <div class="items">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/icon/04.png"
+                                    alt="service">
+                            </div>
+                            <div class="servicetext">
+                                <h5>online investment plans</h5>
+                                <p>fixcon help you to Introduce your digital campaign to visitor in more
+                                    professional
+                                    way and increase.</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/04.jpg"
+                                alt="idk">
+                            <div class="botnn">
+                                <a href="#" class="ser-botn"></a>view details</a><i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <div class="servitem">
+                            <div class="items">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/icon/05.png"
+                                    alt="service">
+                            </div>
+                            <div class="servicetext">
+                                <h5>tax planning</h5>
+                                <p>fixcon help you to Introduce your digital campaign to visitor in more
+                                    professional
+                                    way and increase.</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/05.jpg"
+                                alt="idk">
+                            <div class="botnn">
+                                <a href="#" class="ser-botn"></a>view details</a><i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <div class="servitem">
+                            <div class="items">
+                                <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/icon/06.png"
+                                    alt="service">
+                            </div>
+                            <div class="servicetext">
+                                <h5>wealth management</h5>
+                                <p>fixcon help you to Introduce your digital campaign to visitor in more
+                                    professional
+                                    way and increase.</p>
+                            </div>
+                        </div>
+                        <div class="display">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/service/06.jpg"
+                                alt="idk">
+                            <div class="botnn">
+                                <a href="#" class="ser-botn"></a>view details</a><i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="buttn">
+                    <a href="#" class="lab-butn"></a>free Consultancy</a><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bimg">
+        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/01.jpg" alt="img">
+    </div>
+    <div class="section-wrapper">
+        <div class="sec-container">
+            <div class="text">
+                <h5>our approach</h5>
+                <h2>learn how we work in finance company</h2>
+            </div>
+        </div>
+
+
+        <div class="section-container">
+            <div class="sectioncontent">
+                <div class="sect">
+                    <div class="section">
+                        <div class="secimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/approach/icon/01.png"
+                                alt="sec img">
+                        </div>
+                        <div class="sec-text">
+                            <span class="step">step: 1</span>
+                            <h5>planning</h5>
+                            <p>aenean vulputate elefend tell aenportior euconsequat vitae eleifend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sect">
+                    <div class="section">
+                        <div class="secimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/approach/icon/02.png"
+                                alt="sec img">
+                        </div>
+                        <div class="sec-text">
+                            <span class="step">step: 2</span>
+                            <h5>risk evaluation</h5>
+                            <p>aenean vulputate elefend tell aenportior euconsequat vitae eleifend</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sect">
+                    <div class="section">
+                        <div class="secimg">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/approach/icon/03.png"
+                                alt="sec img">
+                        </div>
+                        <div class="sec-text">
+                            <span class="step">step: 3</span>
+                            <h5>investment</h5>
+                            <p>aenean vulputate elefend tell aenportior euconsequat vitae eleifend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="project-wrapper">
+        <div class="projects">
+            <div class="assgntxt">
+                <h5>our awsome projects</h5>
+                <h2>we've done lot's of Work let's Check Our Case Studies</h2>
+            </div>
+            <div class="list">
+                <ul class="filter-btn-group">
+                    <li class="filter-btn-is-checked" data-filter="*">view all</li>
+                    <li class="filter-btn" data-filter=".financial">financial</li>
+                    <li class="filter-btn" data-filter=".analyzing">analyzing</li>
+                    <li class="filter-btn" data-filter=".marketing">marketing</li>
+                    <li class="filter-btn" data-filter=".business">business</li>
+                </ul>
+            </div>
+
+            <div class="project-container">
+                <div class="project-content">
+
+                    <div class="projgrid">
+                        <div class="projimgs">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/project/01.jpg"
+                                alt="img">
+                        </div>
+
+                        <div class="proj-cont">
+                            <h5>super secret project</h5>
+                            <span>financial</span>
+                            <div class="iclass">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projgrid">
+                        <div class="projimgs">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/project/02.jpg"
+                                alt="img">
+                        </div>
+                        <div class="proj-cont">
+                            <h5>super secret project</h5>
+                            <span>financial</span>
+                            <div class="iclass">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projgrid">
+                        <div class="projimgs">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/project/03.jpg"
+                                alt="img">
+                        </div>
+                        <div class="proj-cont">
+                            <h5>super secret project</h5>
+                            <span>financial</span>
+                            <div class="iclass">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projgrid">
+                        <div class="projimgs">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/project/04.jpg"
+                                alt="img">
+                        </div>
+                        <div class="proj-cont">
+                            <h5>super secret project</h5>
+                            <span>financial</span>
+                            <div class="iclass">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projgrid">
+                        <div class="projimgs">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/project/05.jpg"
+                                alt="img">
+                        </div>
+                        <div class="proj-cont">
+                            <h5>super secret project</h5>
+                            <span>financial</span>
+                            <div class="iclass">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projgrid">
+                        <div class="projimgs">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/project/06.jpg"
+                                alt="img">
+                        </div>
+                        <div class="proj-cont">
+                            <h5>super secret project</h5>
+                            <span>financial</span>
+                            <div class="iclass">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttn">
+                    <a href="#" class="lab-butn"></a>view all projects</a><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="teamimg">
+        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/16.jpg" alt="img">
+    </div>
+    <div class="teamwrapper">
+        <div class="teamcontainer">
+            <div class="teamtxt">
+                <h5>our team mumbers</h5>
+                <h2>looking for a world first-class finance advisor?</h2>
+            </div>
+
+
+            <div class="teammembers ">
+                <div class="teamgrp">
+
+                    <div class="teamimgs">
+                        <div class="teampic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/team/01.jpg"
+                                alt="rajib raj">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team__content">
+                            <h5>amlikso s. solson</h5>
+                            <span>founder</span>
+                        </div>
+                    </div>
+
+                    <div class="teamimgs">
+                        <div class="teampic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/team/02.jpg"
+                                alt="rajib raj">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team__content">
+                            <h5>rosalina d. william</h5>
+                            <span>senior manager</span>
+                        </div>
+                    </div>
+
+                    <div class="teamimgs">
+                        <div class="teampic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/team/03.jpg"
+                                alt="rajib raj">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team__content">
+                            <h5>miranda h. halim</h5>
+                            <span>head of idea</span>
+                        </div>
+                    </div>
+
+                    <div class="teamimgs">
+                        <div class="teampic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/team/04.jpg"
+                                alt="rajib raj">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team__content">
+                            <h5>hexol d. drownix</h5>
+                            <span>senior manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+       
+
+
+
+    <div class="custimgs">
+        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/02.jpg" alt="">
+    </div>
+
+    <div class="customers">
+        <div class="customer-container">
+            <div class="custxt">
+                <h5>happy our customers</h5>
+                <h2>a satisfied customer is the best business strategy of all</h2>
+            </div>
+
+            <div class="ratingcontainer">
+
+
+                <div class="reviews">
+                    <div class="rating">
+                        <div class="rating-thumb">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/testimonial/01.jpg"
+                                alt="review">
+                        </div>
+                        <div class="review-cont">
+                            <h5>hexol d. drownix</h5>
+                            <span>CEO of founder</span>
+                            <p>big advsed her notto do so becau the were housand of bad comma deviou semikol
+                                bes
+                                blind the little and listen</p>
+                            <div class="rating-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <div class="rating-count">3.4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="rating">
+                        <div class="rating-thumb">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/testimonial/02.jpg"
+                                alt="review">
+                        </div>
+                        <div class="review-cont">
+                            <h5>kristin watson</h5>
+                            <span>CEO of founder</span>
+                            <p>big advsed her notto do so becau the were housand of bad comma deviou semikol
+                                bes
+                                blind the little and listen</p>
+                            <div class="rating-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <div class="rating-count">3.4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="rating">
+                        <div class="rating-thumb">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/testimonial/01.jpg"
+                                alt="review">
+                        </div>
+                        <div class="review-cont">
+                            <h5>hexol d. drownix</h5>
+                            <span>CEO of founder</span>
+                            <p>big advsed her notto do so becau the were housand of bad comma deviou semikol
+                                bes
+                                blind the little and listen</p>
+                            <div class="rating-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <div class="rating-count">3.4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="reviews">
+                    <div class="rating">
+                        <div class="rating-thumb">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/testimonial/02.jpg"
+                                alt="review">
+                        </div>
+                        <div class="review-cont">
+                            <h5>kristin watson</h5>
+                            <span>CEO of founder</span>
+                            <p>big advsed her notto do so becau the were housand of bad comma deviou semikol
+                                bes
+                                blind the little and listen</p>
+                            <div class="rating-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <div class="rating-count">3.4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="rating">
+                        <div class="rating-thumb">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/testimonial/01.jpg"
+                                alt="review">
+                        </div>
+                        <div class="review-cont">
+                            <h5>hexol d. drownix</h5>
+                            <span>CEO of founder</span>
+                            <p>big advsed her notto do so becau the were housand of bad comma deviou semikol
+                                bes
+                                blind the little and listen</p>
+                            <div class="rating-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <div class="rating-count">3.4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews">
+                    <div class="rating">
+                        <div class="rating-thumb">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/testimonial/02.jpg"
+                                alt="review">
+                        </div>
+                        <div class="review-cont">
+                            <h5>kristin watson</h5>
+                            <span>CEO of founder</span>
+                            <p>big advsed her notto do so becau the were housand of bad comma deviou semikol
+                                bes
+                                blind the little and listen</p>
+                            <div class="rating-list">
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                                <div class="rating-count">3.4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var $slider = $('.ratingcontainer');
+            var $dotsContainer = $('.number-dots');
+
+            $slider.on('init reInit afterChange', function (event, slick, currentSlide) {
+                var totalSlides = slick.slideCount;
+                var currentDot = currentSlide + 1;
+
+                $dotsContainer.text(currentDot + ' of ' + totalSlides);
+            });
+
+            $slider.slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                fade: false,
+                cssEase: 'linear',
+                dots: true,
+                arrows: false,
+                customPaging: function (slider, i) {
+                    return '<span class="dot">' + (i + 1) + '</span>';
+                }
+            });
+
+            // Add custom styling for dots
+            var dots = $('.slick-dots li');
+            dots.eq(0).addClass('active'); // Set the first dot as active
+            dots.find('button').html('<span></span>'); // Remove default dot content
+        });
+    </script>
+
+
+
+
+
+    <div class="consultation-container">
+        <div class="consultation">
+            <div class="headtxt">
+                <h5>free consultation</h5>
+                <h2>dont like Filling up forms ? Mail us then Info@gmail.com</h2>
+            </div>
+
+            <div class="form-wrapper">
+                <form>
+                    <div class="form-container">
+                        <div class="form-content">
+                            <input type="text" id="name" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="form-content">
+                            <input type="email" id="email" placeholder="Your Email" name="email" required>
+                        </div>
+                        <div class="form-content">
+                            <input type="text" id="service" placeholder="Service Looking For?" name="service" required>
+                        </div>
+                        <div class="form-content">
+                            <input type="tel" id="phone" placeholder="Your Number" name="phone" required>
+                        </div>
+                        <div class="form-message">
+                            <textarea id="message" placeholder="Message" rows="6" name="message" required></textarea>
+                        </div>
+
+                        <div class="submitbtn">
+                            <button class="submit" type="submit">get a call back <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blogimg">
+        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/03.jpg" alt="img">
+    </div>
+    <div class="blogwrapper">
+        <div class="blogs">
+            <div class="blog-head">
+                <h5>our success stories</h5>
+                <h2>latest news and articles from the blog posts</h2>
+            </div>
+            <div class="blog-container">
+
+                <div class="bloggers">
+                    <div class="blogpost">
+                        <div class="blogspic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/01.jpg"
+                                alt="img">
+                        </div>
+                        <div class="blogcontent">
+                            <div class="blogtxt">
+                                <ul>
+                                    <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                </ul>
+                            </div>
+                            <h5>tips for achieving success in our Business</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bloggers">
+                    <div class="blogpost">
+                        <div class="blogspic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/02.jpg"
+                                alt="img">
+                        </div>
+                        <div class="blogcontent">
+                            <div class="blogtxt">
+                                <ul>
+                                    <li><a href="#"><i class="fa-solid fa-user"></i> William smith</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-message"></i> 12Comments</a></li>
+                                </ul>
+                            </div>
+                            <h5>changing and grow business faster and better</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bloggers">
+                    <div class="blogpost">
+                        <div class="blogspic">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/03.jpg"
+                                alt="img">
+                        </div>
+                        <div class="blogcontent">
+                            <div class="blogtxt">
+                                <ul>
+                                    <li><a href="#"><i class="fa-solid fa-user"></i> robot smith</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-message"></i> 14 Comments</a></li>
+                                </ul>
+                            </div>
+                            <h5>containing lorem ipsumns and more recently</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="viewbtn">
+                <button class="viewbttn">View All Blogs<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="trust-wrapper">
+        <div class="trust-container">
+            <div class="trust-content">
+                <div class="trust">
+                    <h5>Trusted by 1200+ popular companies and Individuals</h5>
+                </div>
+                <div class="sponsers">
+                    <div class="spons-img">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/sponsor/01.jpg"
+                            alt="img">
+                    </div>
+                    <div class="spons-img">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/sponsor/02.jpg"
+                            alt="img">
+                    </div>
+                    <div class="spons-img">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/sponsor/03.jpg"
+                            alt="img">
+                    </div>
+                    <div class="spons-img">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/sponsor/04.jpg"
+                            alt="img">
+                    </div>
+                    <div class="spons-img">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/sponsor/05.jpg"
+                            alt="img">
+                    </div>
+                    <div class="spons-img">
+                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/sponsor/06.jpg"
+                            alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.sponsers').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                fade: false,
+                cssEase: 'linear',
+                dots: false,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+
+            });
+        });
+
+    </script>
+
+    <footer>
+        <div class="foot-img">
+            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/bg/footer.jpg" alt="img">
+        </div>
+        <div class="foot-contain">
+            <div class="info-container">
+                <div class="info-items">
+
+                    <div class="info-top">
+                        <div class="info-icon">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/footer/info/icon/01.png"
+                                alt="img">
+                        </div>
+                        <div class="info-cont">
+                            <p>Phone Number</p>
+                            <h6>+880 123 456 789</h6>
+                        </div>
+                    </div>
+
+                    <div class="info-top">
+                        <div class="info-icon">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/footer/info/icon/02.png"
+                                alt="img">
+                        </div>
+                        <div class="info-cont">
+                            <p>Email Address</p>
+                            <h6>infoyour@gmail.com</h6>
+                        </div>
+                    </div>
+
+
+                    <div class="info-top">
+                        <div class="info-icon">
+                            <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/footer/info/icon/03.png"
+                                alt="img">
+                        </div>
+                        <div class="info-cont">
+                            <p>Office Location</p>
+                            <h6>Meltons, Lucas City 1200</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="footer-middle">
+                <div class="footer-container">
+                    <div class="footer-content">
+
+                        <div class="foot foot1">
+                            <div class="foot-title">
+                                <h5>about company</h5>
+                            </div>
+                            <p>Enthusias drive accuratie users vas tha effective interfaces nergstically pursue
+                                adaptve
+                                cores create rough effectve create nterface </p>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot foot2">
+                            <div class="foot-title">
+                                <h5>about company</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class="fa-thin fa-sparkle"></i> Help Center</a></li>
+                                <li><a href="#"><i class="fa-thin fa-sparkle"></i> Partners</a></li>
+                                <li><a href="#"><i class="fa-thin fa-sparkle"></i> Suggestions</a></li>
+                                <li><a href="#"><i class="fa-thin fa-sparkle"></i> Blog</a></li>
+                                <li><a href="#"><i class="fa-thin fa-sparkle"></i> Newsletters</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot foot3">
+                            <div class="foot-title">
+                                <h5>Recent Post</h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="footerimg">
+                                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/01.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="footerpost">
+                                        <h6>Employe development is company’s</h6>
+                                        <span><i class="fa-solid fa-calendar-days"></i> 15 Jan, 2023</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footerimg">
+                                        <img src="https://labartisan.net/pixian/bizpoint-demo/bizpoint/assets/images/blog/home/02.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="footerpost">
+                                        <h6>Should fixing take 10+ corporate steps.</h6>
+                                        <span><i class="fa-solid fa-calendar-days"></i> 15 Jan, 2023</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="foot foot4">
+                            <div class="foot-title">
+                                <h5>Usefull Links</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class=""></i> Contact us</a></li>
+                                <li><a href="#"><i class="icofont-star-alt-1"></i> How it Works</a></li>
+                                <li><a href="#"><i class="icofont-star-alt-1"></i> Create</a></li>
+                                <li><a href="#"><i class="icofont-star-alt-1"></i> Explore</a></li>
+                                <li><a href="#"><i class="icofont-star-alt-1"></i> Terms & Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="footer-btm">
+                <div class="btm">
+                    <p>&copy; Copyright & Design By <a href="#">PixiansStudioUIUX</a> - 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-turn-up"></i></a>
+
+    <script>
+        const scrollToTopButton = document.querySelector(".scrollToTop");
+
+        window.addEventListener("scroll", function () {
+            if (window.pageYOffset > 100) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        });
+
+        scrollToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
+    </div>
+
+</body>
+
+</html>
